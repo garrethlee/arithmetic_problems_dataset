@@ -1,0 +1,26 @@
+dataset_config:
+  max_rounding_precision: 3 # The maximum precision to use when rounding decimal numbers
+  use_commas: false # Whether to use commas to separate numbers right-to-left
+  include_decimals: true # Whether to include decimal numbers in the generated problems
+difficulties: # Difficulties correspond to splits in the dataset
+  very_easy:
+    num_problems: 10000 # The number of arithmetic problems to generate for each difficulty level
+    min_exponent: 0 # The lower bound of the exponent range
+    max_exponent: 2 # The upper bound of the exponent range
+    decimal_problem_proportion: 0.1 # The proportion of decimal problems
+  easy:
+    num_problems: 10000
+    min_exponent: 2
+    max_exponent: 4
+    decimal_problem_proportion: 0.1
+  med:
+    num_problems: 10000
+    min_exponent: 4
+    max_exponent: 7
+    decimal_problem_proportion: 0.1
+  hard:
+    num_problems: 10000
+    min_exponent: 7
+    max_exponent: 10
+    decimal_problem_proportion: 0.1
+
